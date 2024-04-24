@@ -20,7 +20,7 @@ app.use(cors())
 app.use(morgan("dev"))
 app.use(express.json())
 
-app.get("/", (_, res) => res.send("it fuckin’ works :)"));
+app.get("/", (_, res) => res.send("server fuckin’ works :)"));
 
 
 app.get("/api/products/all", async function getAllProductsController(_, res) {
